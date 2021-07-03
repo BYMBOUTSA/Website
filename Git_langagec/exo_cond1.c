@@ -9,7 +9,7 @@
 int main(void) {
 
     //Déclaration de nos variables
-    int som_achats = 0, som_donnee = 0, monnaie = 0;
+    int som_achats = 0, som_donnee = 0, monnaie = 0, op = 0, a = 0;
     int bill500 = 0, bill200 = 0, bill100 = 0, bill50 = 0, bill20 = 0, bill10 = 0, bill5 = 0, coin2 = 0, coin1 = 0;
 
     //Demande à l'utilisateur de saisir le montant des achats et la somme donnée
@@ -64,8 +64,32 @@ int main(void) {
         coin1 = monnaie / 1;
         monnaie %= 1;
 
-         
+
+        //utilisation de nos switch
+        switch(op) {
+
+            case 500:
+                printf("Billet(s) de 500 euros : %d\n", bill500); break;
+            case 200:
+                printf("Billet(s) de 200 euros : %d\n", bill200); break;
+            case 100:
+                printf("Billet(s) de 100 euros : %d\n", bill100); break;
+            case 50:
+                printf("Billet(s) de 50 euros  : %d\n", bill50); break;
+            case 20:
+                printf("Billet(s) de 20 euros  : %d\n", bill20); break;
+            case 10:
+                printf("Billet(s) de 10 euros  : %d\n", bill10); break;
+            case 5:
+                printf("Billet(s) de 5 euros   : %d\n", bill5); break;
+            case 2:
+                printf("Pièce(s) de 2 euros    : %d\n", coin2); break;
+            case 1:
+                printf("Pièce(s) de 1 euro     : %d\n", coin1); break;
+        }
+            
     }
+
 
     return 0;
 }
