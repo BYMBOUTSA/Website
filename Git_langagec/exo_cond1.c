@@ -13,9 +13,9 @@ int main(void) {
     int bill500 = 0, bill200 = 0, bill100 = 0, bill50 = 0, bill20 = 0, bill10 = 0, bill5 = 0, coin2 = 0, coin1 = 0;
 
     //Demande à l'utilisateur de saisir le montant des achats et la somme donnée
-    printf("Entrez le montant de total des achats : %d\n");
+    printf("Entrez le montant de total des achats : ");
     scanf("%d", &som_achats);
-    printf("Entrez la somme donnée : %d\n");
+    printf("Entrez la somme donnée : ");
     scanf("%d", &som_donnee);
 
 
@@ -66,7 +66,7 @@ int main(void) {
 
 
         //utilisation de nos switch
-        switch(op) {
+        switch(monnaie) {
 
             case 500:
                 printf("Billet(s) de 500 euros : %d\n", bill500); break;
@@ -86,6 +86,8 @@ int main(void) {
                 printf("Pièce(s) de 2 euros    : %d\n", coin2); break;
             case 1:
                 printf("Pièce(s) de 1 euro     : %d\n", coin1); break;
+            default:
+                printf("Erreur veuillez rentré des montants valide.\n"); break;
         }
             
     }
