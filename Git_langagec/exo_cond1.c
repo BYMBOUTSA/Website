@@ -33,7 +33,39 @@ int main(void) {
         return 0;
     }
 
+    //Cas où il y a la monnaie à rendre et çà doit être le moins de billets possible
+    else {
+        monnaie = som_donnee - som_achats; // On a la monnaie que si la somme donnée est supérieur à celle des achats
 
+        bill500 = monnaie / 500; // Pour avoir le nombre de billet de 500 euros qu'il y a dans la monnaie
+        monnaie %= 500; // on met le reste de notre division précédente dans monnaie afin de vérifier le reste en fonction de ce que l'on a déjà
+
+        bill200 = monnaie / 200;
+        monnaie %= 200;
+
+        bill100 = monnaie / 100;
+        monnaie %= 100;
+
+        bill50 = monnaie / 50;
+        monnaie %= 50;
+
+        bill20 = monnaie / 20;
+        monnaie %= 20;
+
+        bill10 = monnaie / 10;
+        monnaie %= 10;
+
+        bill5 = monnaie / 5;
+        monnaie %= 5;
+
+        coin2 = monnaie / 2;
+        monnaie %= 2;
+
+        coin1 = monnaie / 1;
+        monnaie %= 1;
+
+         
+    }
 
     return 0;
 }
