@@ -9,7 +9,7 @@
 int main(void) {
 
     //Déclaration de nos variables
-    int som_achats = 0, som_donnee = 0, monnaie = 0, op = 0, a = 0;
+    int som_achats = 0, som_donnee = 0, monnaie = 0, op = 0;
     int bill500 = 0, bill200 = 0, bill100 = 0, bill50 = 0, bill20 = 0, bill10 = 0, bill5 = 0, coin2 = 0, coin1 = 0;
 
     //Demande à l'utilisateur de saisir le montant des achats et la somme donnée
