@@ -64,8 +64,17 @@ int main(void) {
         monnaie %= 1;
 
 
+        //Nous allons maintenant faire des vérifications afin de savoir s'il y a certain billet ou pas s'il y en a pas on ne l'écrit pas
+        (bill500 > 0) ? printf("Billet(s) de 500 euros : %d\n", bill500) : printf("Billet(s) de 500 euros : %d\n", bill500);
+        (bill200 > 0) ? printf("Billet(s) de 200 euros : %d\n", bill200) : printf("Billet(s) de 200 euros : %d\n", bill200);
+        (bill100 > 0) ? printf("Billet(s) de 100 euros : %d\n", bill100) : printf("Billet(s) de 100 euros : %d\n", bill100);
+        (bill50 > 0)  ? printf("Billet de 50 euros     : %d\n", bill50)  : printf("Billet(s) de 50 euros  : %d\n", bill50);
+        (bill20 > 0)  ? printf("Billet(s) de 20 euros  : %d\n", bill20)  : printf("Billet(s) de 20 euros  : %d\n", bill20);
+        (bill10 > 0)  ? printf("Billet(s) de 10 euros  : %d\n", bill10)  : printf("Billet(s) de 10 euros  : %d\n", bill10);
+        (bill5 > 0)   ? printf("Billet(s) de 5 euros   : %d\n", bill5)   : printf("Billet(s) de 5 euros   : %d\n", bill5);
+        (coin2 > 0)   ? printf("Pièce(s) de 2 euros    : %d\n", coin2)   : printf("Pièce(s) de 2 euros    : %d\n", coin2);
+        (coin1 > 0)   ? printf("Pièce(s) de 1 euro     : %d\n", coin1)   : printf("Pièce(s) de 1 euro     : %d\n", coin1);
         
-
     }
 
     return 0;
