@@ -8,7 +8,7 @@
 int main(void) {
 
     //Déclaration des varaiables en types entières
-    int som_achats = 0, som_donnee = 0, monnaie = 0;
+    int som_achats = 0, som_donnee = 0, monnaie = 0, cond = 0;
     int bill500 = 0, bill200 = 0, bill100 = 0, bill50 = 0, bill20 = 0, bill10 = 0, bill5 = 0, coin2 = 0, coin1 = 0;
 
     //Demande à l'utilisateur de rentrer un montant total des achats puis la somme donnée
@@ -74,6 +74,17 @@ int main(void) {
         (bill5 > 0)   ? printf("Billet(s) de 5 euros   : %d\n", bill5)   : printf("Billet(s) de 5 euros   : %d\n", bill5);
         (coin2 > 0)   ? printf("Pièce(s) de 2 euros    : %d\n", coin2)   : printf("Pièce(s) de 2 euros    : %d\n", coin2);
         (coin1 > 0)   ? printf("Pièce(s) de 1 euro     : %d\n", coin1)   : printf("Pièce(s) de 1 euro     : %d\n", coin1);
+
+        /* //Equivalent aussi à çà
+        cond = (bill500 > 0) ? 1 : 0; printf("Billet(s) de 500 euros : %d\n", bill500);
+        cond = (bill200 > 0) ? 1 : 0; printf("Billet(s) de 200 euros : %d\n", bill200);
+        cond = (bill100 > 0) ? 1 : 0; printf("Billet(s) de 100 euros : %d\n", bill100);
+        cond = (bill50 > 0)  ? 1 : 0; printf("Billet(s) de 50 euros  : %d\n", bill50);
+        cond = (bill20 > 0)  ? 1 : 0; printf("Billet(s) de 20 euros  : %d\n", bill20);
+        cond = (bill10 > 0)  ? 1 : 0; printf("Billet(s) de 10 euros  : %d\n", bill10);
+        cond = (bill5 > 0)   ? 1 : 0; printf("Billet(s) de 5 euros   : %d\n", bill5);
+        cond = (coin2 > 0)   ? 1 : 0; printf("Pièce(s) de 2 euros    : %d\n", coin2);
+        cond = (coin1 > 0)   ? 1 : 0; printf("Pièce(s) de 1 euro     : %d\n", coin1); */
         
     }
 
