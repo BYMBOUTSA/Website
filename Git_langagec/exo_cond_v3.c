@@ -32,7 +32,41 @@ int main(void) {
         return 0;
     }
 
-    
+    // cas ou la somme donnée est supérieur à celle des achats
+    else {
+        monnaie = som_donnee - som_achats; // on ne peut avoir de monnaie que si la somme donnée > montant des achats
+
+        bill500 = monnaie / 500; //Pour savoir si on a un ou plusieurs billet(s) de 500 euros dans la monnaie
+        monnaie %= 500; //On met le reste de la division précédente dans monnaie afin de l'utiliser par la suite pour savoir le reste des billet(s) qui nous manque
+
+        bill200 = monnaie / 200;
+        monnaie %= 200;
+
+        bill100 = monnaie / 100;
+        monnaie %= 100;
+
+        bill50 = monnaie / 50;
+        monnaie %= 50;
+
+        bill20 = monnaie / 20;
+        monnaie %= 20;
+
+        bill10 = monnaie / 10;
+        monnaie %= 10;
+
+        bill5 = monnaie / 5;
+        monnaie %= 5;
+
+        coin2 = monnaie / 2;
+        monnaie %= 2;
+
+        coin1 = monnaie / 1;
+        monnaie %= 1;
+
+
+        
+
+    }
 
     return 0;
 }
