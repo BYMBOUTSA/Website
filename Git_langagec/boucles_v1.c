@@ -14,12 +14,17 @@ int main(void) {
         - while fait le test des le départ et si celui-ci est faux tu n'obtient rien.
         - do while s'éxécute au moins une fois et après tu es testé.
     */
-    do {
+    /* do {
         printf("Charly, tu as vu ?\n");
         i++;
 
     }
-    while(i < 5);
+    while(i < 5); */
+
+    for(i; i < 5; i++) {
+        printf("Charly, tu as vu ?\n");
+        //break; //permet d'arrêter les boucles dès sa première exécution
+    }
 
     return 0;
 }
