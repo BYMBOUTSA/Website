@@ -45,7 +45,16 @@ int main(void) {
         printf("Saisies incorrectes !\n");
         return -1;
     }
-    
+
+    //Calcul de la somme des entiers les uns après les autres
+    if(max != min) {
+        for(int i = min; i < max + 1; i++) 
+            somme += i; //équivalent à somme = somme + i
+    }
+    else 
+        somme = min;
+
+    printf("Somme finale vaut : %d\n", somme);
 
     return 0;
 }
