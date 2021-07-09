@@ -40,7 +40,12 @@ int main(void) {
         return -1;
     }
 
-
+    //prévoir le cas ou min > max
+    if(min > max) {
+        printf("Saisies incorrectes !\n");
+        return -1;
+    }
+    
 
     return 0;
 }
