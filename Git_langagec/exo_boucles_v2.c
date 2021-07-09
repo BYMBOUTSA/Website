@@ -25,6 +25,8 @@ int main(void) {
     //Prévoir le cas où max > 1000
     (max > 1000) ? printf("MAX trop grand !\n") : printf("Bonne valeur de MAX !\n"); // équivalent à cond = (max > 1000) ? 1 : 0; printf("MAX trop grand !\n");
 
+    //prévoir le cas où min > max
+    (min > max) ? printf("Saisies incorrectes !\n") : printf("Saisies correctes !\n"); // équivalent à cond = (min > max) ? 1 : 0; printf("Saisies incorrectes !\n");
 
 
     return 0;
