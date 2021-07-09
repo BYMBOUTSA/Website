@@ -7,13 +7,17 @@ int main(void) {
        printf("i vaut %d\n", i);
        i++;
    } */
-   
 
-   do {
+
+   /* do {
        printf("i vaut %d\n", i);
        i++;
    }
-   while(i < 10);
+   while(i < 10); */
+
+
+   for(i = 0; i < 10; i++) 
+        printf("i vaut %d\n", i);
 
    printf("Boucle terminée !\n");
 
