@@ -28,6 +28,16 @@ int main(void) {
     //prévoir le cas où min > max
     (min > max) ? printf("Saisies incorrectes !\n") : printf("Saisies correctes !\n"); // équivalent à cond = (min > max) ? 1 : 0; printf("Saisies incorrectes !\n");
 
+    //Calcul de la somme des entiers d'un nombre à l'autre
+    if(max != min) {
+        for(int i = min; i < max + 1; i++)
+            somme += i; // équivalent à somme = somme + i;
+     }
 
+     else
+        somme = min; // qui est égal à max aussi car max = min dans ce cas là
+    
+    printf("Somme finale : %d\n", somme);
+    
     return 0;
 }
