@@ -11,6 +11,16 @@ if cond:
 elif not warn and system_load < 10:
     print("Pas de soucis")
 
-'''  
-else:
-    print("Tout va bien")  '''  
+''' else:
+    print("Tout va bien")   '''
+    
+
+"Différentes Boucles "
+# while expression:
+#       suite_a_repeter
+
+#cas d'une boucle pas infini
+count = 0
+while count < 9:
+    print(f"indice: {count}")
+    count += 1
