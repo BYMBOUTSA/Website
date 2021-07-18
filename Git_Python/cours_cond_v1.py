@@ -32,3 +32,9 @@ while True:
         break #on sort
 
 print("Programme terminé !") #on affiche 
+
+#boucle for
+s = "Hello Charly !"
+for c in s:
+    print(c, end=" ") #ici ce qu'on met dans end est le fait de mettre un espace entre chaque caractère de notre chaîne 
+print()
