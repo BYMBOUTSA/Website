@@ -34,6 +34,10 @@ while True:
 print("Programme terminé !") #on affiche 
 
 #boucle for
+
+#for var_iter in iterable
+#       suite_a_repeter
+
 s = "Hello Charly !"
 for c in s:
     print(c, end=" ") #ici ce qu'on met dans end est le fait de mettre un espace entre chaque caractère de notre chaîne 
@@ -43,3 +47,26 @@ print()
 for i in range(5, 25, 2): # (5, 25, 2) avec 2 qui est le step qui est le pas
     print(i, end=" ")
 print()
+
+nameList = ["Walter", "Nicole", "Fred", "Akim"]
+family_name = "Lim"
+
+for firstname in nameList:
+    # print(firstname + ' ' + family_name)
+    # print(f"{firstname} {family_name}")
+    # print(" ".join([firstname, family_name]))
+
+#en utilisant les indices
+    for i in range(len(nameList)):
+        firstname = nameList[i]
+        print(f"{firstname} {family_name}") 
+
+for i, firstname in enumerate(nameList):
+    print(f"{firstname} {family_name}")
+    
+#avec l'instruction continue
+    for i, firstname in enumerate(nameList):
+        if firstname == "Fred":
+            continue
+        print(f"{firstname} {family_name}")  
+    
