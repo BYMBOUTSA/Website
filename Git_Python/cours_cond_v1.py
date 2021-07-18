@@ -19,8 +19,16 @@ elif not warn and system_load < 10:
 # while expression:
 #       suite_a_repeter
 
-#cas d'une boucle pas infini
+#cas d'une boucle pas infinie
 count = 0
 while count < 9:
     print(f"indice: {count}")
     count += 1
+    
+#cas d'une boucle infinie
+while True:
+    User = input("Donnez moi votre nom: ") #on demande à l'utilisateur d'entrée son nom
+    if not User: #si l'utilisateur ne rentre pas de nom
+        break #on sort
+
+print("Programme terminé !") #on affiche 
