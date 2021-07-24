@@ -67,3 +67,39 @@ def proc(**kw):
     return kw
 n = proc(b = 5, a = 3, z = 5)
 print(n)
+
+"on appelle fonction imbriqué une fonction dans une autre fonction"
+def proc(**kw):
+    def func():
+        print("appel de func")
+    print("appel de proc")
+    func()
+proc()
+
+"pour exécuter une action on crée une fonction"
+"complexité: création d'un CallBack(objet fonction)"
+def proc(**kw):
+    def func():
+        print("appel de func")
+    print("appel de proc")
+    return func
+n = proc()
+print(n)
+
+""
+def proc(a, b, c):
+    s = a + b + c
+    def func():
+        return f"appel de func: {s}" #on retire le print pour ne pas avoir l'affichage de None
+    print("appel de proc")
+    return func
+n = proc(5, 3, 1)
+print(n()) #pour l'exécuter on doit mettre n() et non n dans le print
+print(type(n))
+
+"Décorateur: appel supplémentaire lorqu'une fonction,une classe est appel"
+#@decorateur()
+#def fonction_decoree(): 
+#   pass
+#"equivalent"
+#fonction_decoree = decorateur(fonction_decoree)
