@@ -1,0 +1,2 @@
+# Fonctions
+Découverte de tous ce qu'i y a  à savoir sur la création d'une fonction son implémentation, son appel dans la fonction main qui est la fonction principale de notre programme ainsi que son prototype si on veut la mettre après notre fonction main.
