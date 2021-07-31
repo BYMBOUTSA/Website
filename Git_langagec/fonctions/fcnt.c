@@ -83,10 +83,14 @@ int mult(int a, int b) {
 int div(int a, int b) {
     if(b > 0)
         return a / b;
-    else if(b < 0)
+    else if(b < 0) {
         printf("Erreur de saisie.\n");
-    else
+        return -2;
+    }
+    else {
         printf("Math ERROR\n");
+        return -1;
+    }
 }
 //------------------------------------------------
 //pour récupérer le reste de la division qui ne marche pas sur d'autre type que les entiers
@@ -119,8 +123,14 @@ int main(void) {
     printf("La somme de %d et %d est : %d\n", a, b, sum(a, b)); //pour afficher l'addition de deux nombres
     printf("La différence de %d et %d est : %d\n", a, b, soust(a, b)); //soustraction de deux nombres
     printf("La multiplication de %d et %d est : %d\n", a, b, mult(a, b)); //multiplication de deux nombres
-    printf("La division de %d et %d est : %d\n", a, b, div(a, b)); //division de deux nombres
     printf("Le reste de la division de %d par %d est : %d\n", a, b, mod(a, b));//pour avoir l'affichage de notre modulo
+
+    //Division
+    printf("Première valeur : ");
+    scanf("%d", &a);
+    printf("Deuxième valeur : ");
+    scanf("%d", &b);
+    printf("La division de %d et %d est : %d\n", a, b, div(a, b)); //division de deux nombres
 
     //pour la valeur absolu
     printf("Entrez votre valeur de a : ");
