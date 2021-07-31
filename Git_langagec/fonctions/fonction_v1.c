@@ -63,7 +63,7 @@ int main(void) {
     printf("Deuxième valeur : ");
     scanf("%d", &b);
 
-    printf("Maximum entre %d et %d : %d\n", a, b, maximum(a,b));
+    printf("Maximum entre %d et %d : %d\n", a, b, maximum(a,b)); //si on veutajouter une troisième valeur printf("Maximum entre %d, %d et %d : %d\n", a, b, c, maximum(maximum(a, b), c));
 
 
     return 0;
