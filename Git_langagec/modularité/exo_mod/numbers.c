@@ -44,19 +44,19 @@ void do_operation(int choice) {
 
     do {
         printf("Entrez un premier nombre : ");
-    scanf("%d", &nb1);
+        scanf("%d", &nb1);
 
-    printf("Entrez un second nombre : ");
-    scanf("%d", &nb2);
+        printf("Entrez un second nombre : ");
+        scanf("%d", &nb2);
 
-    if(nb1 < -1000 || nb1 > 1000 || nb2 < -1000 || nb2 > 1000) 
-        printf("Saisie incorrecte (choisir un nombre entre -1000 et 1000)\n");
-    else {
-        if(choice == 1) result = addition(nb1, nb2);
-        else if(choice == 2) result = soustraction(nb1, nb2);
-        else if(choice == 3) result = multiplication(nb1, nb2);
-        else if(choice == 4) result = division(nb1, nb2);
-        printf("Resultat du calcul = %d\n", result);
+        if(nb1 < -1000 || nb1 > 1000 || nb2 < -1000 || nb2 > 1000) 
+            printf("Saisie incorrecte (choisir un nombre entre -1000 et 1000)\n");
+        else {
+            if(choice == 1) result = addition(nb1, nb2);
+            else if(choice == 2) result = soustraction(nb1, nb2);
+            else if(choice == 3) result = multiplication(nb1, nb2);
+            else if(choice == 4) result = division(nb1, nb2);
+            printf("Resultat du calcul = %d\n", result);
         }
     }
     while(nb1 < -1000 || nb1 > 1000 || nb2 < -1000 || nb2 > 1000);
