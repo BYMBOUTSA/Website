@@ -1,0 +1,82 @@
+
+div#content{
+    background-color: grey;
+}
+
+div#content div{
+    display: inline-block;
+    width: 48%;
+}
+
+div#content div h1, p, iframe{
+    margin: 35px;
+}
+
+
+div#content div.leftbox{
+    background-color: yellow;
+    vertical-align: top;
+}
+ 
+div#content div.rightbox{
+    background-color: green;
+}
+
+div#content div.annonce{
+    background-color: purple;
+    width: 100%;
+    margin: 8px;
+}
+
+
+nav.menu-nav ul li.btn{
+    display: inline-block;
+}
+
+nav.menu-nav ul li.btn{
+    list-style-type: none; /*On désactive les . qu'il y avait au niveau d'Accueil etc*/
+}
+
+nav.menu-nav ul li.btn a{
+    color: white;
+    background-color: red;
+    text-decoration: none; /*Pour désactiver les traits*/
+    padding: 10px;
+}
+
+nav.menu-nav ul li.btn:hover a {
+    /*Pour permettre de faire que lorsqu'on survole un élément il affiche une autre couleur*/
+    color: red;
+    background-color: white;
+    transition: 0.3s all; /*Permet d'ajouter une transition de 0.3s et avec le all en plus on fait cette transition sur tout l'élément*/
+}
+
+div.annonce img{
+    border-radius: 50%;
+}
+
+/*p.welcome{
+    color: #550c87;
+    background-color:  #e53a4e ;
+}*/
+
+/*p.vivacss{
+    color: #000000; /*Permet de modifier la coleur de notre contenu p de la classe vivacss uniquement
+    font-weight: bold; /*Permet de modifier le texte de notre classe vivacss en gras
+}*/
+
+/*body{
+    background: url("https://images3.alphacoders.com/708/708114.jpg") no-repeat; /*Permet de mettre une image de fond sur notre site
+    background-size: 100%; /*Permet de mettre notre fond sur 100% de notre site
+    background-color: #777; /*Permet de modifier la couleur du fond de notre site
+}*/
+
+/*h2.headline{
+    font-size: 50px;
+    padding: 15px; /*Permet de mettre des pixels autours(à droite, à gauche, en bas et en haut) de notre texte
+}*/
+
+/*a{
+    color: #e53a4e;
+    opacity: 0.7; /*Permet de modifier la transparence d'un élément
+}*/
